@@ -1,0 +1,56 @@
+<style>
+    :root{
+        --grid-rows: 1;
+        --grid-columns:1;
+        margin:0;
+      
+        box-sizing: border-box;
+    }
+    #body{
+      margin: auto;
+
+    }
+    head{
+      margin: auto;
+      text-align: center;
+    }
+    #header{
+      text-align: center;
+      margin:auto;
+
+    }
+    #container {
+    margin:1rem auto;
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-columns), 1fr);
+    width: 600px;
+    height: 600px;
+  }
+  #cell{
+    
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+</style>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+  </head>
+    <body id ="body">
+        <header id ="header">
+          <h1>Etch-a-Sketch</h1>
+          <button id = "clear">Click to Clear Board</button>
+        </header>
+        <main id = "main">
+        <div id = "container">
+
+        </div>
+        </main>
+
+    </body>
+</html>
+<script src="divGrid.js"></script>
